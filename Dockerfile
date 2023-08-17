@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y ubuntu-server git sudo
 #clone git repo 
 #https://dzone.com/articles/clone-code-into-containers-how 
-RUN git clone --recurse-submodules https://github.com/project-chip/connectedhomeip.git
+RUN git clone --recurse-submodules https://github.com/mauro-verhoest/connectedhomeip.git
 
 #install prerequisties Linux 
 RUN apt-get  install -y git gcc g++ pkg-config libssl-dev libdbus-1-dev \
