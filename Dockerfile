@@ -18,10 +18,10 @@ RUN apt-get install git gcc g++ pkg-config libssl-dev libdbus-1-dev \
 RUN apt-get install pi-bluetooth avahi-utils
 
 #prepare for builbing 
-RUN source scripts/activate.sh
+RUN source /home/connectedhomeip/scripts/activate.sh
 
 #build for the host OS 
-RUN gn gen out/host
-RUN ninja -C out/host
+RUN gn gen /home/connectedhomeip/out/host
+RUN ninja -C /home/connectedhomeip/out/host
 #Set working directory
 WORKDIR /home/connectedhomeip
