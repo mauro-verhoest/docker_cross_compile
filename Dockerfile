@@ -3,6 +3,7 @@
 FROM arm64v8/ubuntu:latest
 MAINTAINER "Mauro Verhoest"
 ENV DEBIAN_FRONTEND noninteractive
+#https://betterstack.com/community/questions/how-to-use-sudo-inside-docker-container/
 RUN apt-get update && apt-get install -y ubuntu-server git sudo
 #clone git repo 
 #https://dzone.com/articles/clone-code-into-containers-how 
