@@ -3,10 +3,10 @@ Is a Dockerfile to build matter on an arm64v8 ubuntu server image.
 
 
 # **usage: build**
-docker build -t ubuntu-server .
+'docker build -t ubuntu-server .'
 
 # **usage: run**
-docker run -it ubuntu-server
+'docker run -it ubuntu-server'
 
 
 
