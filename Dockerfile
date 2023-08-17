@@ -8,7 +8,7 @@ RUN apt-get update && apt-get install -y ubuntu-server git
 #https://dzone.com/articles/clone-code-into-containers-how 
 RUN mkdir connectedhomeip \
     cd /home/connectedhomeip\
-    git clone --recurse-submodules git@github.com:project-chip/connectedhomeip.git 
+    git clone --recurse-submodules https://github.com/project-chip/connectedhomeip.git
 
 #install prerequisties Linux 
 RUN apt-get install git gcc g++ pkg-config libssl-dev libdbus-1-dev \
