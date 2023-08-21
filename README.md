@@ -1,5 +1,5 @@
 # docker_cross_compile
-Is a Dockerfile to build matter on an arm64v8 ubuntu server image. 
+This repo contains a Dockerfile to build matter on an arm64v8 ubuntu server image. 
 
 
 
